@@ -1,5 +1,7 @@
 package com.costrella.sp.sp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
@@ -9,6 +11,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import retrofit2.Call;
@@ -70,6 +73,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         getFamily();
+        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                String lat = String.valueOf(marker.getPosition().latitude);
+                String lon = String.valueOf(marker.getPosition().longitude);
+                Uri gmmIntentUri = Uri.parse("google.streetview:cbll="+lat+","+lon);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+// Make the Intent explicit by setting the Google Maps package
+                mapIntent.setPackage("com.google.android.apps.maps");
+
+// Attempt to start an activity that can handle the Intent
+                startActivity(mapIntent);
+            }
+        });
         // Add a marker in Sydney and move the camera
 //        LatLng krk = new LatLng(-34, 151);
 //        mMap.addMarker(new MarkerOptions().position(krk).title("Marker in Sydney"));
