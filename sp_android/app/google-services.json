@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "119710562813",
+    "firebase_url": "https://szlachetnapaczka-a28aa.firebaseio.com",
+    "project_id": "szlachetnapaczka-a28aa",
+    "storage_bucket": "szlachetnapaczka-a28aa.appspot.com"
+  },
+
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119710562813:android:824724be4198b2ad",
+        "android_client_info": {
+          "package_name": "com.costrella.sp.sp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119710562813-0a727g7r48qhsum596466d9j9l8qbccf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.costrella.sp.sp",
+            "certificate_hash": "5692c8a02281453963ae6f8ccb6ecf1ffa36b066"
+          }
+        },
+        {
+          "client_id": "119710562813-6emirq30alaq7hfl7g00qnh6ppbgvq10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM4DwikNSsbUatzgGuqhxsDY_bG5ZRr4s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119710562813-6emirq30alaq7hfl7g00qnh6ppbgvq10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
