@@ -1,0 +1,10 @@
+/.idea
+/node_modules
+/target
+/gradle
+portal3/.idea
+portal3/node_modules
+portal3/target
+sp_android/app/build
+sp_android/.idea
+sp_android/.gradle
