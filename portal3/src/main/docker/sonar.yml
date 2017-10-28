@@ -1,0 +1,8 @@
+version: '2'
+services:
+    sp_portal-sonar:
+        container_name: sp_portal-sonar
+        image: sonarqube:6.0-alpine
+        ports:
+            - 9000:9000
+            - 9092:9092

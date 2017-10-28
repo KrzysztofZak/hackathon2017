@@ -1,0 +1,16 @@
+version: '2'
+services:
+    sp_portal-app:
+        image: sp_portal
+        external_links:
+            - sp_portal-postgresql:postgresql
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/sp_portal
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    sp_portal-postgresql:
+        extends:
+            file: postgresql.yml
+            service: sp_portal-postgresql
