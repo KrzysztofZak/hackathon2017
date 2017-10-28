@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span>Family</span> {{vm.family.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Name</span></dt>
+        <dd>
+            <span>{{vm.family.name}}</span>
+        </dd>
+        <dt><span>Surname</span></dt>
+        <dd>
+            <span>{{vm.family.surname}}</span>
+        </dd>
+        <dt><span>Address</span></dt>
+        <dd>
+            <span>{{vm.family.address}}</span>
+        </dd>
+        <dt><span>Lat</span></dt>
+        <dd>
+            <span>{{vm.family.lat}}</span>
+        </dd>
+        <dt><span>Lng</span></dt>
+        <dd>
+            <span>{{vm.family.lng}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="family-detail.edit({id:vm.family.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>
