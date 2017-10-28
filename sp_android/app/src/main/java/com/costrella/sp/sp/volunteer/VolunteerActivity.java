@@ -16,6 +16,7 @@ public class VolunteerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Panel wolontariusza");
         setContentView(R.layout.activity_volunteer);
         button_vol1 = (Button) findViewById(R.id.button_vol1);
         button_vol1.setOnClickListener(new View.OnClickListener() {

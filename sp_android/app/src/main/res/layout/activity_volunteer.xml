@@ -22,7 +22,7 @@
             android:textSize="20dp"
             android:textColor="@color/white"
             android:background="@color/colorAccent"
-            android:text="WYBIERZ RODZINĘ"
+            android:text="ODWIEDŹ RODZINĘ"
             android:id="@+id/button_vol1"
             android:layout_gravity="center_horizontal" />
         <Button

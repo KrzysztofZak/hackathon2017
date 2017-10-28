@@ -1,14 +1,19 @@
 package com.costrella.sp.sp;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -18,11 +23,37 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        setTitle("Mapa");
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+    }
+
+    private void getFamily() {
+        Call<Positions> call = RetrofitInit.getInstance().getCechiniAPI().getFamily();
+        call.enqueue(new Callback<Positions>() {
+            @Override
+            public void onResponse(Call<Positions> call, Response<Positions> response) {
+                if(response.code() == 200){
+                    Positions positions = response.body();
+                    LatLngBounds.Builder builder = new LatLngBounds.Builder();
+                    for(Family family : positions.getPositions()){
+                        builder.include(new LatLng(family.getLatitude(), family.getLongitude()));
+                        mMap.addMarker(new MarkerOptions().position(
+                                new LatLng(family.getLatitude(), family.getLongitude())).title(family.getFamilyName()));
+                    }
+                    LatLngBounds bounds = builder.build();
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, 20));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Positions> call, Throwable t) {
+
+            }
+        });
     }
 
 
@@ -38,10 +69,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        getFamily();
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+//        LatLng krk = new LatLng(-34, 151);
+//        mMap.addMarker(new MarkerOptions().position(krk).title("Marker in Sydney"));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(krk));
     }
 }
