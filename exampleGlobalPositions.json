@@ -1,0 +1,54 @@
+{
+  "Positions": [
+     {
+	  "FamilyName": "Kostrzewa",
+	  "Latitude": 50.064650,
+	  "Longitude":  19.944980
+	},
+	 {
+	  "FamilyName": "Żak",
+	  "Latitude": 50.062769,
+	  "Longitude":  19.947020
+	},
+	 {
+	  "FamilyName": "Porębscy",
+	  "Latitude": 50.062576,
+	  "Longitude":  19.940239
+	},
+	 {
+	  "FamilyName": "Szwachta",
+	  "Latitude": 50.065473,
+	  "Longitude":  19.941645
+	},
+	 {
+	  "FamilyName": "Tuleja",
+	  "Latitude": 50.060968,
+	  "Longitude":  19.934092
+	},
+	 {
+	  "FamilyName": "Kaleta",
+	  "Latitude": 50.062897,
+	  "Longitude":  19.957566
+	},
+	 {
+	  "FamilyName": "Cupiał",
+	  "Latitude": 50.069969,
+	  "Longitude":  19.940464
+	},
+	 {
+	  "FamilyName": "Dudek",
+	  "Latitude": 50.055746,
+	  "Longitude":  19.975762
+	},
+	 {
+	  "FamilyName": "Kozdęba",
+	  "Latitude": 50.059839,
+	  "Longitude":  19.909630
+	},
+	 {
+	  "FamilyName": "Kozdronkiewicz",
+	  "Latitude": 50.047439,
+	  "Longitude":  19.961815
+	}
+  ]
+}
