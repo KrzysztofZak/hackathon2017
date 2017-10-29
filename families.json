@@ -5,70 +5,80 @@
 	  "level": 1,
 	  "FamilyName": "Kostrzewa",
 	  "Latitude": 50.064650,
-	  "Longitude":  19.944980
+	  "Longitude":  19.944980,
+	  "Address": "Chocimska 2/6"
 	},
 	 {
 	  "id": 2,
 	  "level": 3,
 	  "FamilyName": "Żak",
 	  "Latitude": 50.062769,
-	  "Longitude":  19.947020
+	  "Longitude":  19.947020,
+	  "Address": "Mogilska 6"
 	},
 	 {
 	  "id": 3,
 	  "level": 3,
 	  "FamilyName": "Porębscy",
 	  "Latitude": 50.062576,
-	  "Longitude":  19.940239
+	  "Longitude":  19.940239,
+	  "Address": "Bandurskiego 53/8"
 	},
 	 {
 	  "id": 4,
 	  "level": 2,
 	  "FamilyName": "Szwachta",
 	  "Latitude": 50.065473,
-	  "Longitude":  19.941645
+	  "Longitude":  19.941645,
+	  "Address": "Łobzowa 9/11"
 	},
 	 {
 	  "id": 5,
 	  "level": 1,
 	  "FamilyName": "Tuleja",
 	  "Latitude": 50.060968,
-	  "Longitude":  19.934092
+	  "Longitude":  19.934092,
+	  "Address": "Opolska 44/256"
 	},
 	 {
 	  "id": 6,
 	  "level": 1,
 	  "FamilyName": "Kaleta",
 	  "Latitude": 50.062897,
-	  "Longitude":  19.957566
+	  "Longitude":  19.957566,
+	  "Address": "Wadowicka 8/1"
 	},
 	 {
 	  "id": 7,
 	  "level": 3,
 	  "FamilyName": "Cupiał",
 	  "Latitude": 50.069969,
-	  "Longitude":  19.940464
+	  "Longitude":  19.940464,
+	  "Address": "Grunwaldzka 7"
 	},
 	 {
 	  "id": 8,
 	  "level": 1,
 	  "FamilyName": "Dudek",
 	  "Latitude": 50.055746,
-	  "Longitude":  19.975762
+	  "Longitude":  19.975762,
+	  "Address": "Pistacjowa 88/2"
 	},
 	 {
 	  "id": 9,
 	  "level": 1,
 	  "FamilyName": "Kozdęba",
 	  "Latitude": 50.059839,
-	  "Longitude":  19.909630
+	  "Longitude":  19.909630,
+	  "Address": "Zakopiańska 44"
 	},
 	 {
 	  "id": 10,
 	  "level": 2,
 	  "FamilyName": "Kozdronkiewicz",
 	  "Latitude": 50.047439,
-	  "Longitude":  19.961815
+	  "Longitude":  19.961815,
+	  "Address": "Westerplatte 11"
 	}
   ]
 }
