@@ -214,6 +214,7 @@
     <orderEntry type="library" exported="" name="firebase-analytics-license-11.4.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-auth-api-phone-11.4.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-fido-11.4.2" level="project" />
+    <orderEntry type="library" exported="" name="constraint-layout-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-fitness-license-11.4.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-ads-lite-license-11.4.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-vision-11.4.2" level="project" />
@@ -227,6 +228,7 @@
     <orderEntry type="library" exported="" name="play-services-basement-11.4.2" level="project" />
     <orderEntry type="library" exported="" name="realm-android-library-2.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-cast-framework-license-11.4.2" level="project" />
+    <orderEntry type="library" exported="" name="constraint-layout-solver-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-location-license-11.4.2" level="project" />
     <orderEntry type="library" exported="" name="firebase-appindexing-11.4.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-wearable-11.4.2" level="project" />

@@ -9,11 +9,14 @@ import android.widget.Button;
 import com.costrella.sp.sp.MapsActivity;
 import com.costrella.sp.sp.R;
 import com.costrella.sp.sp.family.FamilyActivity;
+import com.costrella.sp.sp.form.FormActivity;
 
 public class VolunteerActivity extends AppCompatActivity {
 
     Button button_vol1;
     Button button_vol2;
+    Button button_vol3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,7 @@ public class VolunteerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_volunteer);
         button_vol1 = (Button) findViewById(R.id.button_vol1);
         button_vol2 = (Button) findViewById(R.id.button_vol2);
+        button_vol3 = (Button) findViewById(R.id.button_vol3);
         button_vol1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,6 +37,13 @@ public class VolunteerActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), FamilyActivity.class);
+                startActivity(intent);
+            }
+        });
+        button_vol3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FormActivity.class);
                 startActivity(intent);
             }
         });

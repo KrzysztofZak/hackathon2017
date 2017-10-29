@@ -23,9 +23,9 @@ public class NotifyController {
         NotificationCompat.Builder builder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(context)
                         .setSmallIcon(R.drawable.cast_ic_notification_small_icon) //this is the icon in notification
-                        .setContentTitle("Szlachetna Paczka - powiadomienie od leadera")   //this is the title of notification
+                        .setContentTitle("Szlachetna Paczka")   //this is the title of notification
                         .setColor(101)                         // this is the color of notification
-                        .setContentText("Otwórz");   //this is the message showed in notification
+                        .setContentText("Powiadomienie od leadera");   //this is the message showed in notification
                         Uri uri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
                         builder.setSound(uri);

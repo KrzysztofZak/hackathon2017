@@ -25,11 +25,24 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Adres:" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:text="adres" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Ile razy była odwiedzona: 3" />
 
     <Button
         android:id="@+id/button1af"
         android:layout_gravity="center"
+        android:background="@color/colorAccent"
         android:gravity="center"
         android:layout_width="385dp"
         android:layout_height="wrap_content"
@@ -41,5 +54,13 @@
         android:layout_width="385dp"
         android:layout_height="wrap_content"
         android:text="POKAŻ NA MAPIE" />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:text="PRZEJDZ NA LISTE MOICH RODZIN" />
 
 </LinearLayout>

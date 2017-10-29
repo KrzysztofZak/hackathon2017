@@ -80,7 +80,8 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".afternotif.AfterNotifyActivity"></activity>
+        <activity android:name=".afternotif.AfterNotifyActivity" />
+        <activity android:name=".form.FormActivity"></activity>
     </application>
 
 </manifest>
