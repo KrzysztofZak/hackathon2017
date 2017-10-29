@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\hackathon2017\sp_android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="be38e7c153f2f39622d55bf3397736495b84aaa6">
+        <dex dex="C:\hackathon2017\sp_android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5d46d273ce177250972e47d5a522ed0a372eb2f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\admin\.android\build-cache\3088c0948894bf3a156c6a70222790e46704fefd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d483779dc728392fefecb9a9650d01bac9e04d3b">
+        <dex dex="C:\hackathon2017\sp_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_42b09f60d6ff57948b5e89eddac8bf732ed02e64\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\io.realm\realm-annotations\2.3.0\5c43618ae2e514637c58474e9e9663c8f054b72f\realm-annotations-2.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5c43618ae2e514637c58474e9e9663c8f054b72f">
+        <dex dex="C:\hackathon2017\sp_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\realm-annotations-2.3.0_a27e18371cd2ca221373c3e4c2dae702801a5776\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\admin\.android\build-cache\fa51bd64236bd7675ee07137de45cb409ddf0973\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b64dd5f01bc37de289f90fd59299b0c76d119611">
+        <dex dex="C:\hackathon2017\sp_android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_937400b6af07ea0322f328f4ff737343224e1891\classes.dex" />
+    </item>
+
+</items>

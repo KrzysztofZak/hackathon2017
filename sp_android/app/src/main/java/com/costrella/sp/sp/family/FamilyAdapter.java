@@ -26,7 +26,6 @@ public class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.MyViewHold
             super(view);
             title = (TextView) view.findViewById(R.id.title);
             genre = (TextView) view.findViewById(R.id.genre);
-            year = (TextView) view.findViewById(R.id.year);
         }
     }
 
@@ -46,9 +45,8 @@ public class FamilyAdapter extends RecyclerView.Adapter<FamilyAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Family movie = moviesList.get(position);
-//        holder.title.setText(movie.getTitle());
-//        holder.genre.setText(movie.getGenre());
-//        holder.year.setText(movie.getYear());
+        holder.title.setText(movie.getFamilyName());
+        holder.genre.setText(movie.getAddress());
     }
 
     @Override

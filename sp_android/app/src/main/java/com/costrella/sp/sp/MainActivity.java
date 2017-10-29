@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        if(!first){
+        if (!first) {
             Realm.init(getApplicationContext());
             RealmConfiguration config = new RealmConfiguration
                     .Builder()
@@ -69,24 +69,45 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        Call<ItemsOfFamily> familes = RetrofitInit.getInstance().getCechiniAPI().getFamilies();
-        familes.enqueue(new Callback<ItemsOfFamily>() {
-            @Override
-            public void onResponse(Call<ItemsOfFamily> call, Response<ItemsOfFamily> response) {
-                if(response.code() == 200){
-                    realm.beginTransaction();
-                    for(Family f : response.body().getFamilies()){
-                        realm.insertOrUpdate(f);
-                    }
-                    realm.commitTransaction();
-                }
-            }
+        Family f1 = new Family();
+        f1.setId(1);
+        f1.setFamilyName("Kowalscy");
+        f1.setAddress("ul. Dietla 25");
 
-            @Override
-            public void onFailure(Call<ItemsOfFamily> call, Throwable t) {
-                Log.d("Failure", "failure");
-            }
-        });
+        Family f2 = new Family();
+        f2.setId(2);
+        f2.setFamilyName("Kalusowie");
+        f2.setAddress("ul. Reymonta 16");
+
+        Family f3 = new Family();
+        f3.setId(3);
+        f3.setFamilyName("Żakowie");
+        f3.setAddress("ul. SLiczna 16");
+
+        realm.beginTransaction();
+        realm.insertOrUpdate(f1);
+        realm.insertOrUpdate(f2);
+        realm.insertOrUpdate(f3);
+        realm.commitTransaction();
+
+//        Call<ItemsOfFamily> familes = RetrofitInit.getInstance().getCechiniAPI().getFamilies();
+//        familes.enqueue(new Callback<ItemsOfFamily>() {
+//            @Override
+//            public void onResponse(Call<ItemsOfFamily> call, Response<ItemsOfFamily> response) {
+//                if(response.code() == 200){
+//                    realm.beginTransaction();
+//                    for(Family f : response.body().getFamilies()){
+//                        realm.insertOrUpdate(f);
+//                    }
+//                    realm.commitTransaction();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<ItemsOfFamily> call, Throwable t) {
+//                Log.d("Failure", "failure");
+//            }
+//        });
 
 //        Call<ItemsOfVolunteer> volunteers = RetrofitInit.getInstance().getCechiniAPI().getVolunteers();
 //        volunteers.enqueue(new Callback<ItemsOfVolunteer>() {

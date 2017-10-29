@@ -67,6 +67,7 @@
         </activity>
         <activity android:name=".MapsActivity" />
         <activity android:name=".volunteer.VolunteerActivity" />
+        <activity android:name=".family.FamilyActivity" />
 
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>

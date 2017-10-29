@@ -20,9 +20,9 @@ public class FamilyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Panel wolontariusza");
+        setTitle("Lista moich rodzin");
         setContentView(R.layout.activity_family);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = (RecyclerView) findViewById(R.id.relative_view);
 
         Realm realm = MainActivity.realm;
         List<Family> families = realm.where(Family.class).findAll();
