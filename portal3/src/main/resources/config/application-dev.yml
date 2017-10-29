@@ -27,7 +27,7 @@ spring:
         url: jdbc:postgresql://localhost:5432/sp_portal
         name:
         username: postgres
-        password: batman77
+        password: postgres
     jpa:
         database-platform: com.costrella.sp.domain.util.FixedPostgreSQL82Dialect
         database: POSTGRESQL

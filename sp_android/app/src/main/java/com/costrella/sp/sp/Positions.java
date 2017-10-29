@@ -1,5 +1,7 @@
 package com.costrella.sp.sp;
 
+import com.costrella.sp.sp.model.Family;
+
 import java.util.List;
 
 /**

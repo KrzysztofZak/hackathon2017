@@ -1,5 +1,9 @@
 package com.costrella.sp.sp;
 
+import com.costrella.sp.sp.model.ItemsOfFamily;
+import com.costrella.sp.sp.model.ItemsOfLeader;
+import com.costrella.sp.sp.model.ItemsOfVolunteer;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 
@@ -11,4 +15,13 @@ public interface SpAPI {
 
     @GET("exampleGlobalPositions.json")
     Call<Positions> getFamily();
+
+    @GET("exampleGlobalPositions.json")
+    Call<ItemsOfFamily> getFamilies();
+
+    @GET("exampleGlobalPositions.json")
+    Call<ItemsOfVolunteer> getVolunteers();
+
+    @GET("exampleGlobalPositions.json")
+    Call<ItemsOfLeader> getLeaders();
 }

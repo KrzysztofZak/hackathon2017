@@ -1,8 +1,10 @@
 package com.costrella.sp.sp;
 
 import android.util.Log;
+
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+
 
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
@@ -16,4 +18,5 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         Log.d(TAG, "From: " + remoteMessage.getFrom());
         Log.d(TAG, "Notification Message Body: " + remoteMessage.getNotification().getBody());
     }
+
 }

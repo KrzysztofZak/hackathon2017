@@ -1,9 +1,11 @@
-package com.costrella.sp.sp;
+package com.costrella.sp.sp.model;
+
+import io.realm.RealmObject;
 
 /**
  * Created by mike on 2017-10-28.
  */
-public class Family {
+public class Family extends RealmObject {
 
     String FamilyName;
     double Latitude;
