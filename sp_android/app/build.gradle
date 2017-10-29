@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.costrella.sp.sp"
+        applicationId "com.costrella.sp2.sp2"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1

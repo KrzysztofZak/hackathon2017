@@ -10,6 +10,8 @@ import android.support.v7.app.NotificationCompat;
 import com.costrella.sp.sp.MainActivity;
 import com.costrella.sp.sp.R;
 
+import java.util.Random;
+
 
 public class NotifyController {
 
@@ -26,12 +28,15 @@ public class NotifyController {
                         builder.setSound(uri);
 
         Intent intent = new Intent(context, MainActivity.class);
+        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        builder.setSound(alarmSound);
         PendingIntent contentIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(contentIntent);
         // Add as notification
         NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        Random generator = new Random();
+        int i = generator.nextInt(1000) + 1;
 
-
-        manager.notify(0, builder.build());
+        manager.notify(i, builder.build());
     }
 }
