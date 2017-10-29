@@ -89,10 +89,16 @@ public class MainActivity extends AppCompatActivity {
         f3.setFamilyName("Żakowie");
         f3.setAddress("ul. SLiczna 16");
 
+        Family f4 = new Family();
+        f4.setId(4);
+        f4.setFamilyName("Jaworscy");
+        f4.setAddress("ul. Zgody 16");
+
         realm.beginTransaction();
         realm.insertOrUpdate(f1);
         realm.insertOrUpdate(f2);
         realm.insertOrUpdate(f3);
+        realm.insertOrUpdate(f4);
         realm.commitTransaction();
 
 //        Call<ItemsOfFamily> familes = RetrofitInit.getInstance().getCechiniAPI().getFamilies();

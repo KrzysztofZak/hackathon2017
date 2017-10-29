@@ -50,8 +50,8 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_login_activity"
-            android:windowSoftInputMode="adjustResize|stateVisible"
-            android:parentActivityName=".SplashActivity">
+            android:parentActivityName=".SplashActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.costrella.sp.sp.SplashActivity" />
@@ -80,6 +80,7 @@
             </intent-filter>
         </service>
 
+        <activity android:name=".afternotif.AfterNotifyActivity"></activity>
     </application>
 
 </manifest>
