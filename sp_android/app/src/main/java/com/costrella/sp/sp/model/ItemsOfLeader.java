@@ -1,7 +1,6 @@
 package com.costrella.sp.sp.model;
 
-import java.util.List;
-
+import io.realm.RealmList;
 import io.realm.RealmObject;
 
 /**
@@ -9,13 +8,13 @@ import io.realm.RealmObject;
  */
 public class ItemsOfLeader extends RealmObject{
 
-    List<Leader> leaders;
+    RealmList<Leader> leaders;
 
-    public List<Leader> getLeaders() {
+    public RealmList<Leader> getLeaders() {
         return leaders;
     }
 
-    public void setLeaders(List<Leader> leaders) {
+    public void setLeaders(RealmList<Leader> leaders) {
         this.leaders = leaders;
     }
 

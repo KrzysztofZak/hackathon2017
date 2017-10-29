@@ -49,24 +49,24 @@ public class MainActivity extends AppCompatActivity {
             realm = Realm.getInstance(config);
         }
         first = true;
-        Call<ItemsOfLeader> leaders = RetrofitInit.getInstance().getCechiniAPI().getLeaders();
-        leaders.enqueue(new Callback<ItemsOfLeader>() {
-            @Override
-            public void onResponse(Call<ItemsOfLeader> call, Response<ItemsOfLeader> response) {
-                if(response.code() == 200){
-                    realm.beginTransaction();
-                    for(Leader leader : response.body().getLeaders()){
-                        realm.insertOrUpdate(leader);
-                    }
-                    realm.commitTransaction();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<ItemsOfLeader> call, Throwable t) {
-                Log.d("Failure", "failure");
-            }
-        });
+//        Call<ItemsOfLeader> leaders = RetrofitInit.getInstance().getCechiniAPI().getLeaders();
+//        leaders.enqueue(new Callback<ItemsOfLeader>() {
+//            @Override
+//            public void onResponse(Call<ItemsOfLeader> call, Response<ItemsOfLeader> response) {
+//                if(response.code() == 200){
+//                    realm.beginTransaction();
+//                    for(Leader leader : response.body().getLeaders()){
+//                        realm.insertOrUpdate(leader);
+//                    }
+//                    realm.commitTransaction();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<ItemsOfLeader> call, Throwable t) {
+//                Log.d("Failure", "failure");
+//            }
+//        });
 
         Call<ItemsOfFamily> familes = RetrofitInit.getInstance().getCechiniAPI().getFamilies();
         familes.enqueue(new Callback<ItemsOfFamily>() {
@@ -87,24 +87,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Call<ItemsOfVolunteer> volunteers = RetrofitInit.getInstance().getCechiniAPI().getVolunteers();
-        volunteers.enqueue(new Callback<ItemsOfVolunteer>() {
-            @Override
-            public void onResponse(Call<ItemsOfVolunteer> call, Response<ItemsOfVolunteer> response) {
-                if(response.code() == 200){
-                    realm.beginTransaction();
-                    for(Volunteer v : response.body().getVolunteers()){
-                        realm.insertOrUpdate(v);
-                    }
-                    realm.commitTransaction();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<ItemsOfVolunteer> call, Throwable t) {
-                Log.d("Failure", "failure");
-            }
-        });
+//        Call<ItemsOfVolunteer> volunteers = RetrofitInit.getInstance().getCechiniAPI().getVolunteers();
+//        volunteers.enqueue(new Callback<ItemsOfVolunteer>() {
+//            @Override
+//            public void onResponse(Call<ItemsOfVolunteer> call, Response<ItemsOfVolunteer> response) {
+//                if(response.code() == 200){
+//                    realm.beginTransaction();
+//                    for(Volunteer v : response.body().getVolunteers()){
+//                        realm.insertOrUpdate(v);
+//                    }
+//                    realm.commitTransaction();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<ItemsOfVolunteer> call, Throwable t) {
+//                Log.d("Failure", "failure");
+//            }
+//        });
 
     }
 }

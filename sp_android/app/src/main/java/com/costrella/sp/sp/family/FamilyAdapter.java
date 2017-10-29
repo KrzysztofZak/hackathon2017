@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.costrella.sp.sp.R;
 import com.costrella.sp.sp.model.Family;
 
 import java.util.List;
