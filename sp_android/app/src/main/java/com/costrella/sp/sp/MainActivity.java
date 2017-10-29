@@ -2,6 +2,7 @@ package com.costrella.sp.sp;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -15,6 +16,7 @@ import com.costrella.sp.sp.model.ItemsOfVolunteer;
 import com.costrella.sp.sp.model.Leader;
 import com.costrella.sp.sp.model.Volunteer;
 import com.costrella.sp.sp.volunteer.VolunteerActivity;
+import com.costrella.sp.sp.webview.WebViewView;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -24,7 +26,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn1;
+    Button btn1, btn3;
     public static boolean first;
     public static Realm realm;
 
@@ -39,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
         setTitle("Menu główne");
         setContentView(R.layout.activity_main);
         btn1 = (Button) findViewById(R.id.button1);
+        btn3 = (Button) findViewById(R.id.button3);
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), WebViewView.class));
+            }
+        });
+
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

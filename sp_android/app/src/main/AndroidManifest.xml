@@ -81,7 +81,8 @@
         </service>
 
         <activity android:name=".afternotif.AfterNotifyActivity" />
-        <activity android:name=".form.FormActivity"></activity>
+        <activity android:name=".form.FormActivity" />
+        <activity android:name=".webview.WebView"></activity>
     </application>
 
 </manifest>
