@@ -1,0 +1,74 @@
+{
+  "Families": [
+     {
+	  "id": 1,
+	  "level": 1,
+	  "FamilyName": "Kostrzewa",
+	  "Latitude": 50.064650,
+	  "Longitude":  19.944980
+	},
+	 {
+	  "id": 2,
+	  "level": 3,
+	  "FamilyName": "Żak",
+	  "Latitude": 50.062769,
+	  "Longitude":  19.947020
+	},
+	 {
+	  "id": 3,
+	  "level": 3,
+	  "FamilyName": "Porębscy",
+	  "Latitude": 50.062576,
+	  "Longitude":  19.940239
+	},
+	 {
+	  "id": 4,
+	  "level": 2,
+	  "FamilyName": "Szwachta",
+	  "Latitude": 50.065473,
+	  "Longitude":  19.941645
+	},
+	 {
+	  "id": 5,
+	  "level": 1,
+	  "FamilyName": "Tuleja",
+	  "Latitude": 50.060968,
+	  "Longitude":  19.934092
+	},
+	 {
+	  "id": 6,
+	  "level": 1,
+	  "FamilyName": "Kaleta",
+	  "Latitude": 50.062897,
+	  "Longitude":  19.957566
+	},
+	 {
+	  "id": 7,
+	  "level": 3,
+	  "FamilyName": "Cupiał",
+	  "Latitude": 50.069969,
+	  "Longitude":  19.940464
+	},
+	 {
+	  "id": 8,
+	  "level": 1,
+	  "FamilyName": "Dudek",
+	  "Latitude": 50.055746,
+	  "Longitude":  19.975762
+	},
+	 {
+	  "id": 9,
+	  "level": 1,
+	  "FamilyName": "Kozdęba",
+	  "Latitude": 50.059839,
+	  "Longitude":  19.909630
+	},
+	 {
+	  "id": 10,
+	  "level": 2,
+	  "FamilyName": "Kozdronkiewicz",
+	  "Latitude": 50.047439,
+	  "Longitude":  19.961815
+	}
+  ]
+}

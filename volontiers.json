@@ -1,0 +1,32 @@
+{
+  "Volontiers":  [
+    {
+      "id": 1,
+      "name": "Michalski",
+      "Families": [
+        1,
+	    2,
+	    3
+       ]
+    },
+	{
+      "id": 2,
+      "name": "Opozda",
+      "Families": [
+        4,
+	    5,
+	    6
+       ]
+    },
+	{
+      "id": 3,
+      "name": "Rodrigez",
+      "Families": [
+        7,
+	    8,
+	    9,
+		10
+       ]
+    }
+  ]
+}
