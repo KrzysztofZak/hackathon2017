@@ -1,7 +1,9 @@
 package com.costrella.sp.sp;
 
+import android.content.Context;
 import android.util.Log;
 
+import com.costrella.sp.sp.notify.NotifyController;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
@@ -17,6 +19,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // message, here is where that should be initiated.
         Log.d(TAG, "From: " + remoteMessage.getFrom());
         Log.d(TAG, "Notification Message Body: " + remoteMessage.getNotification().getBody());
+        NotifyController.addNotification(getApplicationContext(), remoteMessage.getNotification().getBody());
     }
 
 }
